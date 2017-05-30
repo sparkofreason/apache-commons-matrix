@@ -16,8 +16,8 @@
             0 0.0
             1 (ArrayRealVector. (first dims))
             2 (Array2DRowRealMatrix. (first dims) (second dims))
-            (throw (ex-info "Apache Commons Math matrices only supports up to 2 dimensions")
-                   {:requested-shape dims})))
+            (throw (ex-info "Apache Commons Math matrices only supports up to 2 dimensions"
+                            {:requested-shape dims}))))
     (construct-matrix [m data]
       (case (mp/dimensionality data)
             0 data
@@ -35,8 +35,8 @@
             0 0.0
             1 (ArrayRealVector. (first dims))
             2 (Array2DRowRealMatrix. (first dims) (second dims))
-            (throw (ex-info "Apache Commons Math matrices only supports up to 2 dimensions")
-                   {:requested-shape dims})))
+            (throw (ex-info "Apache Commons Math matrices only supports up to 2 dimensions"
+                            {:requested-shape dims}))))
     (construct-matrix [m data]
       (case (mp/dimensionality data)
             0 data
